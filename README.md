@@ -1,4 +1,4 @@
-# My Project: Shonen Fit Quest
+# My Project: CalShredz
 
 ## Project Overview
 

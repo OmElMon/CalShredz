@@ -1,0 +1,236 @@
+/**
+ * GLOBAL STYLESHEET
+ * DESCRIPTION: Main stylesheet containing global styles, animations, and custom components
+ * FEATURES:
+ * - Custom theme variables (light/dark mode support)
+ * - Retro game-inspired UI elements
+ * - Custom animations and effects
+ * - Tailwind CSS integration
+ */
+
+/* Import retro-style Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); /* Pixel font */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap'); /* Comic-style font */
+
+/* Tailwind CSS directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**
+ * THEME DEFINITIONS
+ * Custom color variables for light theme (dark theme would be defined similarly)
+ * Uses HSL color format for better manipulation
+ */
+@layer base {
+  :root {
+    /* Base colors */
+    --background: 0 0% 100%; /* White */
+    --background-alt: 240 4.8% 95.9%; /* Light gray */
+    --foreground: 222.2 84% 4.9%; /* Dark blue-gray */
+
+    /* Card colors */
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 222.2 84% 4.9%; /* Dark blue-gray */
+
+    /* Popover colors */
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 222.2 84% 4.9%; /* Dark blue-gray */
+
+    /* Primary brand colors */
+    --primary: 262 83% 74%; /* Purple */
+    --primary-foreground: 210 40% 98%; /* Light gray */
+
+    /* Secondary colors */
+    --secondary: 210 40% 96.1%; /* Light blue-gray */
+    --secondary-foreground: 222.2 47.4% 11.2%; /* Dark blue-gray */
+
+    /* Muted/disabled colors */
+    --muted: 210 40% 96.1%; /* Light blue-gray */
+    --muted-foreground: 215.4 16.3% 46.9%; /* Medium gray */
+
+    /* Accent colors */
+    --accent: 41 100% 68%; /* Yellow */
+    --accent-foreground: 222.2 47.4% 11.2%; /* Dark blue-gray */
+
+    /* Error/destructive colors */
+    --destructive: 0 84.2% 60.2%; /* Red */
+    --destructive-foreground: 210 40% 98%; /* Light gray */
+
+    /* Border/input colors */
+    --border: 214.3 31.8% 91.4%; /* Light gray */
+    --input: 214.3 31.8% 91.4%; /* Light gray */
+    --ring: 222.2 84% 4.9%; /* Dark blue-gray */
+
+    /* Border radius */
+    --radius: 0.5rem; /* 8px */
+
+    /* Sidebar-specific colors */
+    --sidebar-background: 220 27% 14%; /* Dark blue */
+    --sidebar-foreground: 210 40% 98%; /* Light gray */
+    --sidebar-primary: 262 83% 74%; /* Purple */
+    --sidebar-primary-foreground: 0 0% 98%; /* White */
+    --sidebar-accent: 41 100% 68%; /* Yellow */
+    --sidebar-accent-foreground: 222.2 47.4% 11.2%; /* Dark blue-gray */
+    --sidebar-border: 220 13% 28%; /* Medium blue-gray */
+    --sidebar-ring: 262 83% 74%; /* Purple */
+  }
+}
+
+/**
+ * BASE STYLES
+ * Applies foundational styles to HTML elements
+ */
+@layer base {
+  * {
+    @apply border-border; /* Default border color */
+  }
+
+  body {
+    @apply bg-background text-foreground transition-colors duration-300 ease-in-out;
+    /* Smooth theme transitions */
+  }
+}
+
+/**
+ * PIXEL BORDER COMPONENT
+ * Creates a retro pixel-art style border with animated gradient
+ */
+.pixel-border {
+  position: relative;
+  border: 4px solid transparent;
+  background-clip: padding-box; /* Prevents gradient bleed */
+}
+
+.pixel-border::after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  /* Animated gradient background */
+  background: linear-gradient(45deg, 
+    theme('colors.anime.red'), 
+    theme('colors.anime.purple'), 
+    theme('colors.anime.blue'), 
+    theme('colors.anime.teal'));
+  z-index: -1;
+  /* Pixel-art clip path creates jagged edges */
+  clip-path: polygon(
+    0 0, 10px 0, 10px 4px, 4px 4px, 4px 10px, 0 10px,
+    0 calc(100% - 10px), 0 100%, 10px 100%, 10px calc(100% - 4px), 4px calc(100% - 4px), 4px calc(100% - 10px),
+    calc(100% - 10px) calc(100% - 10px), calc(100% - 10px) calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, 100% 100%, 100% calc(100% - 10px),
+    100% 10px, 100% 0, calc(100% - 10px) 0, calc(100% - 10px) 4px, calc(100% - 4px) 4px, calc(100% - 4px) 10px
+  );
+}
+
+/**
+ * GRADIENT TEXT ANIMATION
+ * Creates animated gradient text effect
+ */
+.gradient-text {
+  background-size: 200% auto;
+  /* Colorful gradient */
+  background-image: linear-gradient(
+    -45deg, 
+    theme('colors.anime.red') 0%, 
+    theme('colors.anime.purple') 25%, 
+    theme('colors.anime.blue') 50%, 
+    theme('colors.anime.teal') 75%, 
+    theme('colors.anime.red') 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* Continuous animation */
+  animation: shimmer 4s linear infinite;
+}
+
+@keyframes shimmer {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/**
+ * RETRO BUTTON STYLES
+ * Creates 8-bit style buttons with hover/active states
+ */
+.retro-btn {
+  @apply relative overflow-hidden bg-anime-purple text-white px-6 py-3 font-pixel text-sm uppercase tracking-wider;
+  box-shadow: 4px 4px 0 theme('colors.anime.dark'); /* 3D effect */
+  transition: all 0.2s ease;
+}
+
+.retro-btn:hover {
+  transform: translate(-2px, -2px); /* Lift effect */
+  box-shadow: 6px 6px 0 theme('colors.anime.dark'); /* Larger shadow */
+}
+
+.retro-btn:active {
+  transform: translate(2px, 2px); /* Pressed effect */
+  box-shadow: 2px 2px 0 theme('colors.anime.dark'); /* Smaller shadow */
+}
+
+/**
+ * PIXEL PROGRESS BAR
+ * Retro-style progress indicator with striped animation
+ */
+.pixel-progress-container {
+  @apply bg-gray-200 h-6 w-full overflow-hidden relative;
+  border: 2px solid theme('colors.anime.dark');
+}
+
+.pixel-progress-bar {
+  @apply h-full transition-all duration-500;
+  /* Striped gradient */
+  background: repeating-linear-gradient(
+    -45deg,
+    theme('colors.anime.purple'),
+    theme('colors.anime.purple') 10px,
+    theme('colors.anime.blue') 10px,
+    theme('colors.anime.blue') 20px
+  );
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite linear;
+}
+
+/**
+ * GLITCH EFFECT
+ * Creates a digital glitch animation for text
+ */
+.glitch {
+  position: relative;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip: rect(0, 0, 0, 0); /* Initially hidden */
+}
+
+.glitch::before {
+  left: 2px;
+  text-shadow: -1px 0 theme('colors.anime.red'); /* Red offset */
+  animation: glitch-anim 2s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+  left: -2px;
+  text-shadow: 1px 0 theme('colors.anime.blue'); /* Blue offset */
+  animation: glitch-anim 3s infinite linear alternate-reverse;
+}
+
+/* Complex glitch animation sequence */
+@keyframes glitch-anim {
+  0% { clip: rect(25px, 9999px, 40px, 0); }
+  5% { clip: rect(25px, 9999px, 99px, 0); }
+  /* ... additional keyframes create the glitch effect ... */
+  100% { clip: rect(2px, 9999px, 35px, 0); }
+}

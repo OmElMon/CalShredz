@@ -1,0 +1,78 @@
+/* 
+ * MAIN LAYOUT STYLES
+ * Defines the root container for the application
+ * - Centers content with max-width constraint
+ * - Adds consistent padding
+ * - Centers text globally (can be overridden by child elements)
+ */
+ #root {
+    max-width: 1280px;      /* Maximum content width */
+    margin: 0 auto;         /* Horizontal centering */
+    padding: 2rem;          /* Internal spacing */
+    text-align: center;     /* Default text alignment */
+  }
+  
+  /* 
+   * LOGO STYLES
+   * Base styling for logo elements with:
+   * - Fixed height
+   * - Internal padding
+   * - Smooth hover effects
+   */
+  .logo {
+    height: 6em;            /* Fixed height */
+    padding: 1.5em;         /* Internal spacing */
+    will-change: filter;    /* Performance hint for browsers */
+    transition: filter 300ms; /* Smooth transition for hover effects */
+  }
+  
+  /* 
+   * LOGO HOVER EFFECTS
+   * Adds glow effect on hover with different colors for different logos
+   */
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa); /* Default blue glow */
+  }
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa); /* React-specific teal glow */
+  }
+  
+  /* 
+   * LOGO SPIN ANIMATION
+   * Creates infinite rotation animation for logos
+   */
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);   /* Starting position */
+    }
+    to {
+      transform: rotate(360deg); /* Full rotation */
+    }
+  }
+  
+  /* 
+   * MOTION PREFERENCE MEDIA QUERY
+   * Only applies animations if user hasn't prefers-reduced-motion
+   */
+  @media (prefers-reduced-motion: no-preference) {
+    /* Targets second logo in the document */
+    a:nth-of-type(2) .logo {
+      animation: logo-spin infinite 20s linear; /* Infinite slow rotation */
+    }
+  }
+  
+  /* 
+   * CARD COMPONENT STYLES
+   * Basic styling for card containers
+   */
+  .card {
+    padding: 2em;          /* Internal spacing */
+  }
+  
+  /* 
+   * SECONDARY TEXT STYLES
+   * Used for less important text elements
+   */
+  .read-the-docs {
+    color: #888;           /* Gray color for secondary text */
+  }

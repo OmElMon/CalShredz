@@ -1,0 +1,48 @@
+{
+    "compilerOptions": {
+      /* ---------------------------
+       * Language & Environment
+       * --------------------------- */
+      "target": "ES2020",  // Compile to ECMAScript 2020 syntax
+      "useDefineForClassFields": true,  // Modern class fields behavior
+      "lib": ["ES2020", "DOM", "DOM.Iterable"],  // Include browser and ES2020 APIs
+      
+      /* ---------------------------
+       * Module System
+       * --------------------------- */
+      "module": "ESNext",  // Use modern ES modules
+      "moduleResolution": "bundler",  // For modern bundlers (Vite, esbuild)
+      "allowImportingTsExtensions": true,  // Allow importing .ts/.tsx directly
+      "isolatedModules": true,  // Ensure files can be compiled independently
+      "moduleDetection": "force",  // Treat all files as modules
+      "noEmit": true,  // Don't output files (bundler handles this)
+      "skipLibCheck": true,  // Skip type checking of declaration files
+      
+      /* ---------------------------
+       * JSX Configuration
+       * --------------------------- */
+      "jsx": "react-jsx",  // Transform JSX using React's new JSX runtime
+      
+      /* ---------------------------
+       * Type Checking (Loose Mode)
+       * --------------------------- */
+      "strict": false,  // Disable all strict type checking
+      "noUnusedLocals": false,  // Don't check unused variables
+      "noUnusedParameters": false,  // Don't check unused function parameters
+      "noImplicitAny": false,  // Allow implicit 'any' types
+      "noFallthroughCasesInSwitch": false,  // Don't check switch case fallthrough
+      
+      /* ---------------------------
+       * Path Resolution
+       * --------------------------- */
+      "baseUrl": ".",  // Base directory for imports
+      "paths": {
+        "@/*": ["./src/*"]  // Path alias (e.g., "@/components/Button")
+      }
+    },
+    
+    /* ---------------------------
+     * File Inclusion
+     * --------------------------- */
+    "include": ["src"]  // Only type-check files in src directory
+  }

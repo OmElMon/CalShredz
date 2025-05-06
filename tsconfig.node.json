@@ -1,0 +1,42 @@
+{
+   "compilerOptions": {
+     /* ======================
+      * LANGUAGE & ENVIRONMENT
+      * ====================== */
+     "target": "ES2022",          // Compile to ECMAScript 2022 syntax
+     "lib": ["ES2023"],           // Use ES2023 standard library features
+     "module": "ESNext",          // Use the latest ES module format
+     "skipLibCheck": true,        // Skip type checking of declaration files (faster builds)
+ 
+     /* ======================
+      * BUNDLER CONFIGURATION
+      * (Optimized for Vite/esbuild)
+      * ====================== */
+     "moduleResolution": "bundler",       // Modern resolver for bundlers
+     "allowImportingTsExtensions": true,  // Allow .ts/.tsx imports without extension
+     "isolatedModules": true,             // Ensure safe transpilation (important for HMR)
+     "moduleDetection": "force",          // Treat all files as ES modules
+     "noEmit": true,                      // Don't output JS (bundler handles this)
+ 
+     /* ======================
+      * TYPE CHECKING & LINTING
+      * ====================== */
+     "strict": true,                    // Enable all strict type checking
+     "noUnusedLocals": false,           // Don't warn about unused variables (relaxed)
+     "noUnusedParameters": false,       // Don't warn about unused params (relaxed)
+     "noFallthroughCasesInSwitch": true // Error on missing switch case breaks
+ 
+     /* Note: Missing common options you might want to consider:
+      * - "baseUrl" and "paths" for import aliases
+      * - "jsx" if using React/JSX
+      * - "types" for global type definitions
+      */
+   },
+
+   /* ======================
+    * FILES TO INCLUDE
+    * ====================== */
+   "include": ["vite.config.ts"]  // Only type-check the Vite config file
+ 
+ }
+

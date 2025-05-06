@@ -1,0 +1,36 @@
+{
+    // This is a solution-style tsconfig file used for project references
+    "files": [],  // Intentionally empty - files are specified in referenced configs
+    
+    // Project references - points to other tsconfig files
+    "references": [
+      { "path": "./tsconfig.app.json" },  // Main application configuration
+      { "path": "./tsconfig.node.json" }  // Node-specific configuration
+    ],
+  
+    // Shared compiler options for all referenced projects
+    "compilerOptions": {
+      // Base directory for module resolution
+      "baseUrl": ".",
+      
+      // Path aliases - allows using '@/' as an alias for './src/'
+      "paths": {
+        "@/*": ["./src/*"]  // Example: import something from "@/components/Button"
+      },
+  
+      /* ---------------------------
+       * Type Checking Strictness
+       * These are relaxed settings - consider enabling for better type safety
+       * --------------------------- */
+      "noImplicitAny": false,         // Allow implicit 'any' types
+      "noUnusedParameters": false,    // Don't check unused function parameters
+      "noUnusedLocals": false,        // Don't check unused local variables
+      "strictNullChecks": false,      // Disable strict null checking
+  
+      /* ---------------------------
+       * Compatibility Options
+       * --------------------------- */
+      "skipLibCheck": true,  // Skip type checking of declaration files (faster compilation)
+      "allowJs": true        // Allow JavaScript files to be compiled
+    }
+  }

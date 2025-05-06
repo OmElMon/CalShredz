@@ -17,7 +17,7 @@ Welcome to your personal fitness tracking application built with modern web tech
 git clone <your-repo-url>
 
 # 2. Navigate to project directory
-cd shonen-fit-quest
+cd CalShredz
 
 # 3. Install dependencies
 npm install

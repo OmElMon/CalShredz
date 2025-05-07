@@ -3,7 +3,7 @@ import { type DialogProps } from "@radix-ui/react-dialog"; // Dialog primitives
 import { Command as CommandPrimitive } from "cmdk"; // Command menu primitive
 import { Search } from "lucide-react"; // Search icon
 import { cn } from "@/lib/utils"; // Classname utility
-import { Dialog, DialogContent } from "@/components/ui/dialog"; // Dialog components
+import { Dialog, DialogContent } from "@/components/ui/Dialog"; // Dialog components
 
 // 1. Command Root Component
 // -------------------------
@@ -26,8 +26,23 @@ Command.displayName = CommandPrimitive.displayName;
 // 2. Command Dialog Component
 // ---------------------------
 // Wraps the command menu in a dialog (modal)
-interface CommandDialogProps extends DialogProps {}
+interface CommandDialogProps extends DialogProps {
+  /**
+   * The content of the command dialog
+   * 
+   * @default undefined
+   */
+  children?: React.ReactNode;
+  
+  /**
+   * Optional class name for additional styling
+   * 
+   * @default undefined
+   */
+  className?: string;
+}
 
+// Usage in CommandDialog component
 const CommandDialog = ({ children, ...props }: CommandDialogProps) => {
   return (
     <Dialog {...props}>

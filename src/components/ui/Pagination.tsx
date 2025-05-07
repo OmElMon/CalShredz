@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight, MoreHorizontal } from "lucide-react" // Navi
 
 // Import utility for merging class names and shared button variants
 import { cn } from "@/lib/utils"
-import { ButtonProps, buttonVariants } from "@/components/ui/button"
+import { ButtonProps, buttonVariants } from "@/components/ui/Button"
 
 // === Pagination Root Container ===
 // Used to wrap the entire pagination bar

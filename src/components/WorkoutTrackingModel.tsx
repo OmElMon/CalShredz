@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
-import { Checkbox } from "@/components/ui/checkbox";
-import { Progress } from "@/components/ui/progress";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
+import { Button } from "@/components/ui/Button";
+import { Input } from "@/components/ui/Input";
+import { Label } from "@/components/ui/Label";
+import { Textarea } from "@/components/ui/TextArea";
+import { Checkbox } from "@/components/ui/Checkbox";
+import { Progress } from "@/components/ui/Progress";
 import { X, Clock, CheckSquare, Star, Timer, Save } from "lucide-react";
 import { Workout, Exercise, WorkoutLog, CompletedExercise } from "@/lib/types";
-import { Badge } from "@/components/ui/badge";
+import { Badge } from "@/components/ui/Badge";
 import { cn } from '@/lib/utils';
 
 interface WorkoutTrackingModalProps {

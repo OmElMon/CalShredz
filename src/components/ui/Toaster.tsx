@@ -1,5 +1,5 @@
 // Import custom toast hook to access current toasts
-import { useToast } from "@/hooks/use-toast"
+import { useToast } from "@/hooks/UseToast"
 
 // Import toast UI components (based on Radix)
 import {

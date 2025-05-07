@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
+import { Textarea } from "@/components/ui/TextArea";
 import { Scale, TrendingDown, TrendingUp, PlusCircle, Calendar, ChevronLeft, ChevronRight } from "lucide-react";
 import { weightEntries as initialWeightEntries } from "@/lib/data";
 import { WeightEntry } from "@/lib/types";
@@ -51,7 +51,7 @@ const WeightTracker: React.FC = () => {
   
   // Calculate progress percentage (0-100)
   const progressPercentage = Math.max(0, Math.min(100, 
-    100 - (weightToTarget / (userProfile.currentWeight! - targetWeight) * 100));
+    100 - (weightToTarget / (userProfile.currentWeight! - targetWeight) * 100)));
 
   /**
    * Handles adding a new weight entry

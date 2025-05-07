@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/Card";
+import { Button } from "@/components/ui/Button";
+import { Input } from "@/components/ui/Input";
+import { Label } from "@/components/ui/Label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/Select";
 import { Pizza, Coffee, Utensils, Apple, PlusCircle, Flame } from "lucide-react";
-import { calorieEntries } from "@/lib/data";
+import { calorieEntries } from "@/lib/Data";
 import { CalorieEntry } from "@/lib/types";
 import { cn } from '@/lib/utils';
 

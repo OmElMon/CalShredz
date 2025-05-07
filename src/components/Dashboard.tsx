@@ -1,7 +1,7 @@
 import React from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
 import { Dumbbell, Heart, Flame, Scale, Trophy, ArrowUpRight } from "lucide-react";
-import { userProfile, weightEntries, achievements, calorieEntries } from "@/lib/data";
+import { userProfile, weightEntries, achievements, calorieEntries } from "@/lib/Data";
 
 /**
  * COMPONENT: Dashboard

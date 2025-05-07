@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/Avatar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Send, ChevronRight, Info, Menu } from "lucide-react";
 import { chatMessages as initialChatMessages } from "@/lib/data";

@@ -4,7 +4,7 @@ import * as ToggleGroupPrimitive from "@radix-ui/react-toggle-group"
 import { type VariantProps } from "class-variance-authority"
 
 import { cn } from "@/lib/utils" // Utility to merge Tailwind class names
-import { toggleVariants } from "@/components/ui/toggle" // Variants for styling toggles
+import { toggleVariants } from "@/components/ui/Toggle" // Variants for styling toggles
 
 // Create a context to pass down toggle size and variant styles from group to items
 const ToggleGroupContext = React.createContext<

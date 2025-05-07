@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Slot } from "@radix-ui/react-slot"; // For polymorphic component support
 import { cva, type VariantProps } from "class-variance-authority"; // For variant styling
-import { cn } from "@/lib/utils"; // Classname utility
+import { cn } from "@/lib/Utils"; // Classname utility
 
 // 1. Button Variant Definitions
 // -----------------------------

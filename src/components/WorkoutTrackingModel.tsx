@@ -9,7 +9,7 @@ import { Progress } from "@/components/ui/Progress";
 import { X, Clock, CheckSquare, Star, Timer, Save } from "lucide-react";
 import { Workout, Exercise, WorkoutLog, CompletedExercise } from "@/lib/types";
 import { Badge } from "@/components/ui/Badge";
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/Utils';
 
 interface WorkoutTrackingModalProps {
   workout: Workout;

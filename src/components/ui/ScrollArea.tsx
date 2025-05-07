@@ -1,7 +1,7 @@
 // Import necessary dependencies
 import * as React from "react"
 import * as ScrollAreaPrimitive from "@radix-ui/react-scroll-area" // Radix UI's unstyled scroll area components
-import { cn } from "@/lib/utils" // Utility for combining class names
+import { cn } from "@/lib/Utils" // Utility for combining class names
 
 /**
  * ScrollArea Component

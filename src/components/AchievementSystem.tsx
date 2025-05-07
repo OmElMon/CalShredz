@@ -7,9 +7,9 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/Tabs";
 import { Trophy, Lock, Check, Star, Gift, Zap, Award } from "lucide-react";
 // Data and types
 import { achievements } from "@/lib/Data";
-import { Achievement } from "@/lib/types";
+import { Achievement } from "@/lib/Types";
 // Utility function for conditional class names
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/Utils';
 
 /**
  * AchievementSystem Component

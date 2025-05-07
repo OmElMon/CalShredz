@@ -1,4 +1,4 @@
-import { Workout, Achievement, CalorieEntry, WeightEntry, ChatMessage, UserProfile, Exercise, WorkoutLog, CompletedExercise } from "./types";
+import { Workout, Achievement, CalorieEntry, WeightEntry, ChatMessage, UserProfile, Exercise, WorkoutLog, CompletedExercise } from "./Types";
 
 // Sample exercises
 export const exercises: Exercise[] = [

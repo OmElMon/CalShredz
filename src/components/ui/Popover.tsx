@@ -1,7 +1,7 @@
 // Import necessary dependencies
 import * as React from "react"
 import * as PopoverPrimitive from "@radix-ui/react-popover" // Radix UI's unstyled popover components
-import { cn } from "@/lib/utils" // Utility for combining class names
+import { cn } from "@/lib/Utils" // Utility for combining class names
 
 /**
  * Export the base Popover component (root)

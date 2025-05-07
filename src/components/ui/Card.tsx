@@ -1,5 +1,5 @@
 import * as React from "react";
-import { cn } from "@/lib/utils"; // Classname utility function
+import { cn } from "@/lib/Utils"; // Classname utility function
 
 // 1. Card Root Component
 // ----------------------

@@ -1,7 +1,7 @@
 // Import necessary libraries
 import * as React from "react"
 import * as HoverCardPrimitive from "@radix-ui/react-hover-card" // Radix HoverCard primitives
-import { cn } from "@/lib/utils" // Utility to conditionally join Tailwind classes
+import { cn } from "@/lib/Utils" // Utility to conditionally join Tailwind classes
 
 // Re-export Radix's HoverCard root component for creating the hover card context
 const HoverCard = HoverCardPrimitive.Root

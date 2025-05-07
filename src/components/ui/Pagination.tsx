@@ -3,7 +3,7 @@ import * as React from "react"
 import { ChevronLeft, ChevronRight, MoreHorizontal } from "lucide-react" // Navigation icons
 
 // Import utility for merging class names and shared button variants
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/Utils"
 import { ButtonProps, buttonVariants } from "@/components/ui/Button"
 
 // === Pagination Root Container ===

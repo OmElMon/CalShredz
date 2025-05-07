@@ -1,30 +1,61 @@
-// Import React and utility for merging class names
+// Import React and the classname utility
 import * as React from "react"
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/Utils"  // Note: Fixed path case sensitivity ("Utils" → "utils")
 
-// Define the props interface by extending native <textarea> attributes
-export interface TextareaProps
-  extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {}
+/**
+ * TextareaProps Interface
+ * 
+ * Extends all native HTML textarea attributes while adding:
+ * - Support for custom className
+ * - Proper TypeScript type checking
+ * - ForwardRef compatibility
+ */
+export interface TextareaProps 
+  extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
+  /**
+   * Optional className for custom styling
+   * 
+   * @default undefined
+   */
+  className?: string;
+  
+  /**
+   * All other standard textarea props are inherited via:
+   * React.TextareaHTMLAttributes<HTMLTextAreaElement>
+   */
+}
 
-// Create a forwardRef component so parent components can get a ref to the <textarea>
+/**
+ * Custom Textarea Component
+ * 
+ * Features:
+ * - ForwardRef support for direct DOM access
+ * - Tailwind CSS styling
+ * - Full HTML textarea compatibility
+ */
 const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
   ({ className, ...props }, ref) => {
     return (
       <textarea
-        ref={ref} // attach the forwarded ref
-        {...props} // spread all other passed-in props (e.g. value, onChange)
+        ref={ref}
         className={cn(
-          // Apply default styling using Tailwind and allow overrides via className
-          "flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50",
+          // Base styles
+          "flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm",
+          // Focus states
+          "ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none",
+          "focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
+          // Disabled state
+          "disabled:cursor-not-allowed disabled:opacity-50",
+          // Custom classes
           className
         )}
+        {...props}
       />
     )
   }
 )
 
-// Set a display name for debugging/dev tools
+// Set display name for debugging
 Textarea.displayName = "Textarea"
 
-// Export the component for use
 export { Textarea }

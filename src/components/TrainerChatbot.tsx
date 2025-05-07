@@ -1,12 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/Button";
+import { Input } from "@/components/ui/Input";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/Avatar";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
 import { Send, ChevronRight, Info, Menu } from "lucide-react";
-import { chatMessages as initialChatMessages } from "@/lib/data";
-import { ChatMessage } from "@/lib/types";
-import { cn } from '@/lib/utils';
+import { chatMessages as initialChatMessages } from "@/lib/Data";
+import { ChatMessage } from "@/lib/Types";
+import { cn } from '@/lib/Utils';
 
 /**
  * COMPONENT: TrainerChatbot

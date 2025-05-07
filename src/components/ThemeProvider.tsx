@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
-import { userProfile } from '@/lib/data';
+import { userProfile } from '@/lib/Data';
 
 /**
  * TYPE DEFINITIONS

@@ -6,7 +6,7 @@ import * as MenubarPrimitive from "@radix-ui/react-menubar"
 import { Check, ChevronRight, Circle } from "lucide-react"
 
 // Utility function to merge Tailwind classes conditionally
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/Utils"
 
 // Basic re-exports of Radix primitives for ease of use elsewhere
 const MenubarMenu = MenubarPrimitive.Menu

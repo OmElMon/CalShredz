@@ -3,7 +3,7 @@ import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 
 // Utility function for combining class names
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/Utils";
 
 // 1. Badge Variant Definitions
 // ----------------------------

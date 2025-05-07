@@ -7,7 +7,7 @@
  */
 
 // Import the utility for combining class names
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/Utils"
 
 /**
  * Skeleton Component

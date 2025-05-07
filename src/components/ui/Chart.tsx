@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as RechartsPrimitive from "recharts"; // Recharts library for chart components
-import { cn } from "@/lib/utils"; // Classname utility
+import { cn } from "@/lib/Utils"; // Classname utility
 
 // 1. Theme Configuration
 // ----------------------

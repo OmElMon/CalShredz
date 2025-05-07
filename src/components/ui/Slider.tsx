@@ -1,7 +1,7 @@
 // Importing necessary modules and components
 import * as React from "react"
 import * as SliderPrimitive from "@radix-ui/react-slider" // Radix UI Slider components
-import { cn } from "@/lib/utils" // Utility function for conditional classNames
+import { cn } from "@/lib/Utils" // Utility function for conditional classNames
 
 // Creating a custom Slider component using React.forwardRef
 const Slider = React.forwardRef<

@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as DialogPrimitive from "@radix-ui/react-dialog"; // Radix UI dialog primitives
 import { X } from "lucide-react"; // Close icon
-import { cn } from "@/lib/utils"; // Classname utility
+import { cn } from "@/lib/Utils"; // Classname utility
 
 // 1. Basic Components (Pass-through)
 // ---------------------------------

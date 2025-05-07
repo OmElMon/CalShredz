@@ -9,7 +9,7 @@ import {
   ToastProvider,     // Context provider to manage all toasts
   ToastTitle,        // Main heading/title
   ToastViewport,     // Where the toasts are rendered (bottom-right, etc.)
-} from "@/components/ui/toast"
+} from "@/components/ui/Toast"
 
 // Toaster component that renders all active toasts
 export function Toaster() {

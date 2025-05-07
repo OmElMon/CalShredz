@@ -3,7 +3,7 @@ import * as React from "react"
 import * as ProgressPrimitive from "@radix-ui/react-progress"
 
 // Import classname utility function for conditional Tailwind classes
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/Utils"
 
 /**
  * Progress component that displays a progress bar

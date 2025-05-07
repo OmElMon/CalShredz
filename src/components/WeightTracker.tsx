@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
+import { Button } from "@/components/ui/Button";
+import { Input } from "@/components/ui/Input";
+import { Label } from "@/components/ui/Label";
 import { Textarea } from "@/components/ui/TextArea";
 import { Scale, TrendingDown, TrendingUp, PlusCircle, Calendar, ChevronLeft, ChevronRight } from "lucide-react";
-import { weightEntries as initialWeightEntries } from "@/lib/data";
-import { WeightEntry } from "@/lib/types";
-import { userProfile } from "@/lib/data";
+import { weightEntries as initialWeightEntries } from "@/lib/Data";
+import { WeightEntry } from "@/lib/Types";
+import { userProfile } from "@/lib/Data";
 
 /**
  * COMPONENT: WeightTracker

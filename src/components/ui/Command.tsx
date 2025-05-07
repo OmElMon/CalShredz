@@ -2,7 +2,7 @@ import * as React from "react";
 import { type DialogProps } from "@radix-ui/react-dialog"; // Dialog primitives
 import { Command as CommandPrimitive } from "cmdk"; // Command menu primitive
 import { Search } from "lucide-react"; // Search icon
-import { cn } from "@/lib/utils"; // Classname utility
+import { cn } from "@/lib/Utils"; // Classname utility
 import { Dialog, DialogContent } from "@/components/ui/Dialog"; // Dialog components
 
 // 1. Command Root Component

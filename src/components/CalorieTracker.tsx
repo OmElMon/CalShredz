@@ -7,7 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Pizza, Coffee, Utensils, Apple, PlusCircle, Flame } from "lucide-react";
 import { calorieEntries } from "@/lib/Data";
 import { CalorieEntry } from "@/lib/types";
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/Utils';
 
 /**
  * COMPONENT: CalorieTracker

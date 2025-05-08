@@ -2,7 +2,7 @@
 import * as React from "react"
 import * as TooltipPrimitive from "@radix-ui/react-tooltip"
 
-import { cn } from "@/lib/utils" // Utility function for conditionally combining class names
+import { cn } from "@/lib/utils.ts" // Utility function for conditionally combining class names
 
 // Export Radix Tooltip components as named exports for convenience and consistency
 const TooltipProvider = TooltipPrimitive.Provider // Provides context for nested tooltips

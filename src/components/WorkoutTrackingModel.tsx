@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/TextArea";
 import { Checkbox } from "@/components/ui/Checkbox";
 import { Progress } from "@/components/ui/Progress";
 import { X, Clock, CheckSquare, Star, Timer, Save } from "lucide-react";
-import { Workout, Exercise, WorkoutLog, CompletedExercise } from "@/lib/types";
+import { Workout, Exercise, WorkoutLog, CompletedExercise } from "@/lib/Types";
 import { Badge } from "@/components/ui/Badge";
 import { cn } from '@/lib/utils';
 

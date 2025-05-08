@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/Button";
 import { Heart, Dumbbell, BarChart2, Trophy, MessageCircle, Scale, Home } from "lucide-react";
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/utils.ts';
 
 // Props for NavBar component
 interface NavBarProps {

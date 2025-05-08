@@ -1,7 +1,7 @@
 // Import necessary dependencies
 import * as React from "react"
 import * as SeparatorPrimitive from "@radix-ui/react-separator" // Radix UI's unstyled separator component
-import { cn } from "@/lib/Utils" // Utility for combining class names
+import { cn } from "@/lib/utils" // Utility for combining class names
 
 /**
  * Separator Component

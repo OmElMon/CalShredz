@@ -3,7 +3,7 @@ import * as React from "react"
 import * as SwitchPrimitives from "@radix-ui/react-switch"
 
 // Import utility function for conditional class merging
-import { cn } from "@/lib/Utils"
+import { cn } from "@/lib/utils"
 
 // Define a `Switch` component using React's `forwardRef`
 const Switch = React.forwardRef<

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Slot } from "@radix-ui/react-slot"; // For polymorphic component support
 import { ChevronRight, MoreHorizontal } from "lucide-react"; // Icons for separators/ellipsis
-import { cn } from "@/lib/Utils"; // Classname utility
+import { cn } from "@/lib/utils"; // Classname utility
 
 // 1. Breadcrumb Root Component
 // ----------------------------

@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
 import { Send, ChevronRight, Info, Menu } from "lucide-react";
 import { chatMessages as initialChatMessages } from "@/lib/Data";
 import { ChatMessage } from "@/lib/Types";
-import { cn } from '@/lib/Utils';
+import { cn } from '@/lib/utils';
 
 /**
  * COMPONENT: TrainerChatbot

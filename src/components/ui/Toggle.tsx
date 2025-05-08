@@ -3,7 +3,7 @@ import * as React from "react"
 import * as TogglePrimitive from "@radix-ui/react-toggle"
 import { cva, type VariantProps } from "class-variance-authority"
 
-import { cn } from "@/lib/Utils" // Utility to conditionally join Tailwind class names
+import { cn } from "@/lib/utils" // Utility to conditionally join Tailwind class names
 
 // Define styling variants for the toggle using class-variance-authority (CVA)
 const toggleVariants = cva(

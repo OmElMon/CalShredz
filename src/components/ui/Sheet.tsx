@@ -5,7 +5,7 @@ import { X } from "lucide-react"
 import * as React from "react"
 
 // Utility to conditionally join Tailwind class names
-import { cn } from "@/lib/Utils"
+import { cn } from "@/lib/utils"
 
 // === Base Primitives (re-exported for easy use) ===
 const Sheet = SheetPrimitive.Root              // Manages open/close state

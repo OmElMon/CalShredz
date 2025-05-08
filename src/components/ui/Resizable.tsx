@@ -1,7 +1,7 @@
 // Import necessary dependencies
 import { GripVertical } from "lucide-react" // Icon used for the resize handle grip
 import * as ResizablePrimitive from "react-resizable-panels" // Base resizable panel primitives
-import { cn } from "@/lib/Utils" // Utility for combining class names
+import { cn } from "@/lib/utils" // Utility for combining class names
 
 /**
  * ResizablePanelGroup Component

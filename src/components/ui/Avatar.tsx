@@ -3,7 +3,7 @@ import * as React from "react";
 import * as AvatarPrimitive from "@radix-ui/react-avatar";
 
 // Utility function for combining class names
-import { cn } from "@/lib/Utils";
+import { cn } from "@/lib/utils";
 
 // 1. Avatar Root Component
 // ------------------------

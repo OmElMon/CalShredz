@@ -2,7 +2,7 @@
 import * as React from "react"
 
 // Import the `cn` utility function to combine Tailwind CSS class names conditionally
-import { cn } from "@/lib/Utils"
+import { cn } from "@/lib/utils"
 
 // Create a reusable Input component using React.forwardRef
 const Input = React.forwardRef<HTMLInputElement, React.ComponentProps<"input">>(

@@ -5,7 +5,7 @@ import * as AccordionPrimitive from "@radix-ui/react-accordion";
 // ChevronDown icon from Lucide for the toggle indicator
 import { ChevronDown } from "lucide-react";
 // Utility function for combining Tailwind classes
-import { cn } from "@/lib/Utils";
+import { cn } from "@/lib/utils";
 
 // 1. Root Accordion Component
 // --------------------------

@@ -9,7 +9,7 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { X } from "lucide-react"
 
 // Utility function to merge class names
-import { cn } from "@/lib/Utils"
+import { cn } from "@/lib/utils"
 
 // --- Toast Context Provider ---
 const ToastProvider = ToastPrimitives.Provider // Provides toast context to children

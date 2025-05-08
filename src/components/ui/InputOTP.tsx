@@ -1,7 +1,7 @@
 import * as React from "react";
 import { OTPInput, OTPInputContext } from "input-otp"; // OTP input library
 import { Dot } from "lucide-react"; // Separator icon
-import { cn } from "@/lib/Utils"; // Classname utility
+import { cn } from "@/lib/utils"; // Classname utility
 
 /**
  * InputOTP - Root component for the OTP input system

@@ -8,7 +8,7 @@ import * as LabelPrimitive from "@radix-ui/react-label"
 import { cva, type VariantProps } from "class-variance-authority"
 
 // Import a utility for merging class names
-import { cn } from "@/lib/Utils"
+import { cn } from "@/lib/utils"
 
 // Define base styles for the label using `cva` (class variance authority)
 const labelVariants = cva(

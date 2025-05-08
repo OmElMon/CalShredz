@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Drawer as DrawerPrimitive } from "vaul"; // Vaul drawer library
-import { cn } from "@/lib/Utils"; // Classname utility
+import { cn } from "@/lib/utils"; // Classname utility
 
 // 1. Drawer Root Component
 // ------------------------

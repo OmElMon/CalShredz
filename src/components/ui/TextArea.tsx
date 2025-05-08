@@ -1,6 +1,6 @@
 // Import React and the classname utility
 import * as React from "react"
-import { cn } from "@/lib/Utils"  // Note: Fixed path case sensitivity ("Utils" → "utils")
+import { cn } from "@/lib/utils"  // Note: Fixed path case sensitivity ("Utils" → "utils")
 
 /**
  * TextareaProps Interface

@@ -3,7 +3,7 @@ import * as React from "react";
 // class-variance-authority for creating variant-based class utilities
 import { cva, type VariantProps } from "class-variance-authority";
 // Utility function for combining Tailwind classes
-import { cn } from "@/lib/Utils";
+import { cn } from "@/lib/utils";
 
 // 1. Alert Variant Definitions
 // ---------------------------

@@ -9,7 +9,7 @@ import { Trophy, Lock, Check, Star, Gift, Zap, Award } from "lucide-react";
 import { achievements } from "@/lib/Data";
 import { Achievement } from "@/lib/Types";
 // Utility function for conditional class names
-import { cn } from '@/lib/Utils';
+import { cn } from '@/lib/utils';
 
 /**
  * AchievementSystem Component

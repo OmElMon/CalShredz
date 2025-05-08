@@ -1,6 +1,6 @@
 // Import React and the utility function for merging Tailwind classes
 import * as React from "react"
-import { cn } from "@/lib/Utils"
+import { cn } from "@/lib/utils"
 
 // Main Table wrapper component
 const Table = React.forwardRef<

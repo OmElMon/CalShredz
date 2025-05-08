@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as CheckboxPrimitive from "@radix-ui/react-checkbox"; // Radix UI checkbox primitives
 import { Check } from "lucide-react"; // Check icon from Lucide
-import { cn } from "@/lib/Utils"; // Classname utility function
+import { cn } from "@/lib/utils"; // Classname utility function
 
 // 1. Checkbox Component
 // --------------------

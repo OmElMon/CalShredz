@@ -3,7 +3,7 @@ import * as React from "react"
 import * as AlertDialogPrimitive from "@radix-ui/react-alert-dialog"
 
 // Import utility functions
-import { cn } from "@/lib/Utils" // Class name merging utility
+import { cn } from "@/lib/utils" // Class name merging utility
 import { buttonVariants } from "@/components/ui/Button" // Button style variants
 
 /**

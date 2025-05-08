@@ -1,7 +1,7 @@
 // Import necessary libraries
 import * as React from "react"
 import * as TabsPrimitive from "@radix-ui/react-tabs" // Radix UI Tabs primitives
-import { cn } from "@/lib/Utils" // Utility function for merging class names
+import { cn } from "@/lib/utils" // Utility function for merging class names
 
 // Exporting the root Tabs component as-is from Radix
 const Tabs = TabsPrimitive.Root

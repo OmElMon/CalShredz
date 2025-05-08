@@ -5,7 +5,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { BarChart2, Calendar, ChevronLeft, ChevronRight, TrendingUp } from "lucide-react";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 import { weightEntries, calorieEntries, workouts } from "@/lib/data";
-import { cn } from '@/lib/Utils';
+import { cn } from '@/lib/utils';
 
 // Main component for tracking progress through data visualization
 const ProgressTracker: React.FC = () => {

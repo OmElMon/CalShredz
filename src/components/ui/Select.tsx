@@ -2,7 +2,7 @@
 import * as React from "react"
 import * as SelectPrimitive from "@radix-ui/react-select" // Radix UI's unstyled select components
 import { Check, ChevronDown, ChevronUp } from "lucide-react" // Icons for indicators
-import { cn } from "@/lib/Utils" // Utility for combining class names
+import { cn } from "@/lib/utils" // Utility for combining class names
 
 /**
  * Core Select Components

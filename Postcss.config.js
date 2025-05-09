@@ -2,7 +2,7 @@
 module.exports = {
   plugins: {
     tailwindcss: {
-      config: './tailwind.config.ts', // explicitly point to your TS config
+      config: './tailwind.config.ts',
     },
     autoprefixer: {},
   },

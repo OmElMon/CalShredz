@@ -6,7 +6,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import { ThemeProvider } from "./components/ThemeProvider";
-import ForceTailwindSafelist from "./ForceTailwindSafelist"; // 🔧 Dummy component to preserve Tailwind styles
 
 /**
  * QUERY CLIENT INSTANCE
@@ -30,21 +29,29 @@ const queryClient = new QueryClient();
  * - "*" - Catch-all route for 404 errors (must be last)
  */
 const App = () => (
+  // React Query provider for data fetching
   <QueryClientProvider client={queryClient}>
+    {/* Theme provider for dark/light mode support */}
     <ThemeProvider>
+      {/* Tooltip provider for accessibility */}
       <TooltipProvider>
+        {/* Toast notification systems (two different implementations) */}
         <Toaster />
         <Sonner />
         
+        {/* Client-side routing setup */}
         <BrowserRouter>
           <Routes>
+            {/* Main application route */}
             <Route path="/" element={<Index />} />
+            
+            {/* 
+              IMPORTANT: All custom routes should be added above this line
+              This catch-all route handles 404 errors for unknown paths 
+            */}
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
-
-        {/* 👇 Force Tailwind to include critical classes in production */}
-        <ForceTailwindSafelist />
       </TooltipProvider>
     </ThemeProvider>
   </QueryClientProvider>

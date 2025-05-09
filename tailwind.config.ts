@@ -19,8 +19,8 @@ export default {
   content: [
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
+    "./App/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
-    "./**/*.{html,ts,tsx}",
   ],
   
   // Optional prefix for all utility classes

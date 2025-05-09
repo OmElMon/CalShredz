@@ -6,7 +6,7 @@ import { Label } from "@/components/ui/Label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/Select";
 import { Pizza, Coffee, Utensils, Apple, PlusCircle, Flame } from "lucide-react";
 import { calorieEntries } from "@/lib/Data";
-import { CalorieEntry } from "@/lib/types";
+import { CalorieEntry } from "@/lib/Types";
 import { cn } from '@/lib/utils';
 
 /**

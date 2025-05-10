@@ -19,9 +19,9 @@ export default {
 
   // Paths where Tailwind scans for class usage (used for purging unused styles)
   content: [
+    "./src/components/**/*.{js,ts,jsx,tsx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx}",
     "./src/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-    "./pages/**/*.{js,ts,jsx,tsx}",
   ],
 
   // Safelist utility classes that may be dynamically generated or hard to detect

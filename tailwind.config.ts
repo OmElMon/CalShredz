@@ -18,7 +18,7 @@ export default {
   darkMode: ["class"],
 
   // Paths where Tailwind scans for class usage (used for purging unused styles)
-  content: ["./src/**/*.{js,ts,jsx,tsx}"],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 
   // Safelist utility classes that may be dynamically generated or hard to detect
   // Ensures Tailwind includes these styles in the final build

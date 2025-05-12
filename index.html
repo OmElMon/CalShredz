@@ -1,30 +1,24 @@
 <!DOCTYPE html>
-<!-- The document type declaration defines this file as an HTML5 document -->
-
+<!-- Root element with language attribute (helps browsers/accessibility) -->
 <html lang="en">
-  <!-- The root HTML element, with the language set to English -->
-
+  
+  <!-- Document metadata and resources -->
   <head>
-    <!-- Document metadata (not visible content) -->
-    
+    <!-- Defines character encoding (required for special characters) -->
     <meta charset="UTF-8" />
-    <!-- Sets the character encoding to UTF-8 to support most characters -->
-
+    <!-- Ensures proper rendering on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Ensures responsive design and proper scaling on mobile devices -->
-
+    <!-- App title (shown in browser tab) -->
     <title>shonen-fit-quest</title>
-    <!-- The title shown in the browser tab -->
   </head>
 
+  <!-- Visible page content -->
   <body>
-    <!-- The visible content of the page -->
-
+    <!-- Container where your React app will mount -->
     <div id="root"></div>
-    <!-- The root DOM node where the React app will be mounted -->
 
-    <script type="module" src="/src/main.tsx"></script>
-    <!-- Entry point for the Vite-powered React app during development.
-         In production, Vite replaces this with the built JS bundle. -->
+    <!-- Entry point for your application -->
+    <!-- 'type="module"' enables modern ES6+ features -->
+    <script type="module" src="/src/Main.tsx"></script>
   </body>
 </html>
